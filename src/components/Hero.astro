@@ -1,0 +1,71 @@
+---
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+}
+
+const {href, title, body} = Astro.props;
+---
+
+<div class="">
+    <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
+        <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+            <div class="px-6 lg:px-0 lg:pt-4">
+                <div class="mx-auto max-w-2xl">
+                    <div class="max-w-lg">
+                        <div class="mt-24 sm:mt-32 lg:mt-16">
+                            <a href="#" class="inline-flex space-x-6">
+                                <span class="rounded-full bg-black/80 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-black">What's new</span>
+                                <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
+                                    <span>just arrived new products</span>
+                                    <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                         aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                        <h1 class="mt-10 text-4xl font-roboto tracking-tight text-gray-900 sm:text-6xl">
+                            Improve the design of your office
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600">Anim aute id magna aliqua ad ad non deserunt
+                            sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+                            aliqua.</p>
+                        <div class="mt-10 flex items-center gap-x-6">
+                            <a href="#"
+                               class="rounded-md bg-white border border-black px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+                                Shop
+                            </a>
+                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Check the new designs<span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen relative">
+                <img class="rounded-xl"
+                     src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"/>
+                <div class="absolute top-0 right-0 rounded-bl-xl p-6 bg-gray-50">
+                    <svg class="h-2 w-2 inline fill-black mr-2" viewBox="0 0 6 6" aria-hidden="true">
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                    <svg class="h-2 w-2 inline fill-gray-300 mr-2" viewBox="0 0 6 6" aria-hidden="true">
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                    <svg class="h-2 w-2 inline fill-gray-300 mr-2" viewBox="0 0 6 6" aria-hidden="true">
+                        <circle cx="3" cy="3" r="3"/>
+                    </svg>
+                </div>
+                <div class="absolute bottom-0 right-0 rounded-full m-6 px-6 py-3 bg-gray-50 bg-opacity-75">
+                    hola 2 asdasd
+                </div>
+            </div>
+
+        </div>
+        <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
+    </div>
+</div>
