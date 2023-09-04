@@ -18,7 +18,7 @@ const {href, title, body} = Astro.props;
                             <a href="#" class="inline-flex space-x-6">
                                 <span class="rounded-full bg-black/80 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-black">What's new</span>
                                 <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600">
-                                    <span>just arrived new products</span>
+                                    <span>version 3.0</span>
                                     <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
                                          aria-hidden="true">
                                         <path fill-rule="evenodd"
@@ -29,7 +29,7 @@ const {href, title, body} = Astro.props;
                             </a>
                         </div>
                         <h1 class="mt-10 text-4xl font-roboto tracking-tight text-gray-900 sm:text-6xl">
-                            Improve the design of your office
+                            Improve communication with your customers
                         </h1>
                         <p class="mt-6 text-lg text-gray-600">Anim aute id magna aliqua ad ad non deserunt
                             sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
@@ -37,9 +37,9 @@ const {href, title, body} = Astro.props;
                         <div class="mt-10 flex items-center gap-x-6">
                             <a href="#"
                                class="rounded-md bg-white border border-black px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-black hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
-                                Shop
+                                Signup
                             </a>
-                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Check the new designs<span
+                            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Check the new features<span
                                     aria-hidden="true">→</span></a>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const {href, title, body} = Astro.props;
 
             <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen relative">
                 <img class="rounded-xl"
-                     src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"/>
+                     src="/public/hero.png"/>
                 <div class="absolute top-0 right-0 rounded-bl-xl p-6 bg-gray-50">
                     <svg class="h-2 w-2 inline fill-black mr-2" viewBox="0 0 6 6" aria-hidden="true">
                         <circle cx="3" cy="3" r="3"/>
@@ -60,9 +60,17 @@ const {href, title, body} = Astro.props;
                         <circle cx="3" cy="3" r="3"/>
                     </svg>
                 </div>
-                <div class="absolute bottom-0 right-0 rounded-full m-6 px-6 py-3 bg-gray-50 bg-opacity-75">
-                    hola 2 asdasd
+
+                <div class="absolute bottom-0 right-0 rounded-full m-6 pl-1 pr-4 py-1 bg-black bg-opacity-75 flex items-center">
+                    <img class="inline mr-2 h-9 w-9 rounded-full"
+                         src="/public/avatar.jpeg"
+                         alt="">
+                    <div class="flex flex-col">
+                        <span class="text-white text-sm font-roboto">Edgar Alejandro</span>
+                        <span class="text-gray-200 text-xs font-nunito">Software developer</span>
+                    </div>
                 </div>
+
             </div>
 
         </div>
