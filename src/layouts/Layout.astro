@@ -34,7 +34,7 @@ const {title} = Astro.props;
           <img class="h-8 w-auto" src="/public/logo-black.png" alt="">
         </a>
       </div>
-      <div class="flex lg:hidden">
+      <div id="openNavBar" class="flex lg:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -54,7 +54,7 @@ const {title} = Astro.props;
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
+    <div id="navBar" class="hidden lg:hidden" role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-50"></div>
       <div
@@ -64,7 +64,7 @@ const {title} = Astro.props;
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="/public/logo-black.png" alt="">
           </a>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+          <button id="closeNavBar" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Close menu</span>
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                  aria-hidden="true">
@@ -111,7 +111,6 @@ const {title} = Astro.props;
 
 <script>
   const navBar: HTMLElement = document.getElementById('navBar');
-  const backdrop: HTMLElement = document.getElementById('backdrop');
   const closeNavBar = document.getElementById('closeNavBar');
   const openNavBar = document.getElementById('openNavBar');
 
@@ -120,6 +119,5 @@ const {title} = Astro.props;
 
   function toggleMenu() {
     navBar.classList.toggle("hidden");
-    backdrop.classList.toggle("hidden");
   }
 </script>
