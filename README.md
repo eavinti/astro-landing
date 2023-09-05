@@ -1,8 +1,6 @@
 # Astro TEMPLATE
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![hero](./public/social.png)
+![hero](./public/screenshot.png)
 
 ## 🚀 Project Structure
 
@@ -14,7 +12,10 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── ... images
 ├── src/
 │   ├── components/
+│   │   └── Faq.astro
+│   │   └── Footer.astro
 │   │   └── Hero.astro
+│   │   └── Pricing.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
