@@ -1,26 +1,10 @@
 ---
-interface Props {
-    title: string;
-    body: string;
-    href: string;
-}
+interface Props {}
 
-const {href, title, body} = Astro.props;
+const {} = Astro.props;
 ---
 
-<!--li class="link-card">
-  <a href={href}>
-    <h2 class="bg-red-200">
-      {title}
-      <span>&rarr;</span>
-    </h2>
-    <p>
-      {body}
-    </p>
-  </a>
-</li-->
-
-<footer aria-labelledby="footer-heading" class="relative border-t border-gray-900/10 py-24 sm:mt-56 sm:py-32">
+<footer aria-labelledby="footer-heading" class="relative border-t border-gray-900/10 py-24 sm:py-32">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <img class="h-7" src="./logo-black.png" alt="Company name">
